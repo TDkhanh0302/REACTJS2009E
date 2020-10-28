@@ -14,7 +14,6 @@ function getSalary(Salary){
         console.log("Luong rong:", Salary*90/100)
     }
 }
-
 // Bai2 Xet tuoi vao lop 10
 function getAge(age) {
     age == Number
@@ -25,7 +24,6 @@ function getAge(age) {
         console.log("Hoc sinh du tuoi vao lop 10")
     }
 }
-
 // Bai3 So sanh voi so 100
 function compareNumber(num) {
     num == Number
@@ -36,7 +34,6 @@ function compareNumber(num) {
         console.log("So lon hon 100")
     }
 }
-
 // Bai4 Tim so lon nhat
 function numMax(a, b, c) {
     a, b, c == Number
@@ -49,7 +46,6 @@ function numMax(a, b, c) {
     }
     console.log(max)
 }
-
 // Bai5 Xep hang hoc luc
 function mediumScore(score) {
     score == Number
@@ -66,7 +62,6 @@ function mediumScore(score) {
         console.log("Hang F")
     }
 }
-
 // Bai6 Giai phuong trinh bac hai
 function equation(a, b, c) {
     a, b ,c == Number
@@ -83,7 +78,6 @@ function equation(a, b, c) {
         console.log("Phuong trinh co 2 nghiem la:", (-b+Math.sqrt(delta))/(2*a),'va ', (-b-Math.sqrt(delta))/(2*a))
     }
 }
-
 // Bai7 Tinh hoa hong
 function getCommission(money) {
     money == Number
@@ -97,7 +91,6 @@ function getCommission(money) {
         console.log("Phi hoa hong la:", money*20/100, "trieu")
     }
 }
-
 // Bai8 Tinh cuoc dien thoai
 function telephoneCharges(minute) {
     minute == Number
