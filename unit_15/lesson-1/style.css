@@ -1,0 +1,8 @@
+.btn-save,
+.btn-cancel {
+    display: none;
+}
+
+#new_row {
+    display: none;
+}
