@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container pt-3">
+        <button type="button" class="btn btn-primary btn-sm" onclick="createRow()">Add</button>
+        <button type="button" class="btn btn-danger btn-sm">Delete</button>
+        <br><br>
+        <table id="my-table" class="table table-striped">
+            <tr>
+                <th>
+                    <input type="checkbox" name="" id="select-all">
+                </th>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+
+            <tr id="row1">
+                <td>
+                    <input type="checkbox" class="check-box" name="">
+                </td>
+                <td id="id_row1">1</td>
+                <td id="name_row1">Trinh Duc Khanh</td>
+                <td id="gender_row1">Nam</td>
+                <td id="age_row1">23</td>
+                <td>
+                    <button type="button" id="edit_button1" class="btn btn-primary btn-sm" onclick="editRow('1')">Edit</button>
+                    <button type="button" id="save_button1" class="btn-save btn btn-success btn-sm" onclick="saveRow('1')">Save</button>
+                    <button type="button" id="cancel_button1" class="btn-cancel btn btn-warning btn-sm">Cancel</button>
+                    <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow('1')">Delete</button>
+                </td>
+            </tr>
+
+            <tr id="row2">
+                <td>
+                    <input type="checkbox" class="check-box" name="">
+                </td>
+                <td id="id_row2">2</td>
+                <td id="name_row2">Vu Quang Huy</td>
+                <td id="gender_row2">Nam</td>
+                <td id="age_row2">22</td>
+                <td>
+                    <button type="button" id="edit_button2" class="btn btn-primary btn-sm" onclick="editRow('2')">Edit</button>
+                    <button type="button" id="save_button2" class="btn-save btn btn-success btn-sm" onclick="saveRow('2')">Save</button>
+                    <button type="button" id="cancel_button2" class="btn-cancel btn btn-warning btn-sm">Cancel</button>
+                    <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow('2')">Delete</button>
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td>
+                    <input type="checkbox" class="check-box" name="">
+                </td>
+                <td id="id_row3">3</td>
+                <td id="name_row3">Trinh Duc Duy</td>
+                <td id="gender_row3">Nam</td>
+                <td id="age_row3">20</td>
+                <td>
+                    <button type="button" id="edit_button3" class="btn btn-primary btn-sm" onclick="editRow('3')">Edit</button>
+                    <button type="button" id="save_button3" class="btn-save btn btn-success btn-sm" onclick="saveRow('3')">Save</button>
+                    <button type="button" id="cancel_button3" class="btn-cancel btn btn-warning btn-sm">Cancel</button>
+                    <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow('3')">Delete</button>
+                </td>
+            </tr>
+
+            <tr id="new_row">
+                <td>
+                    <input type="checkbox" name="">
+                </td>
+                <td id="id"></td>
+                <td>
+                    <input type="text" name="" id="new_name">
+                </td>
+                <td>
+                    <input type="text" name="" id="new_gender">
+                </td>
+                <td>
+                    <input type="text" name="" id="new_age">
+                </td>
+                <td>
+                    <button type="button" id="save_button" class="btn btn-success btn-sm" onclick="addRow()">Save</button>
+                    <button type="button" id="cancel_button" class="btn btn-warning btn-sm">Cancel</button>
+                </td>
+            </tr>
+        </table>
+
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
